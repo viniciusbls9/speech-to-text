@@ -61,7 +61,7 @@ function App() {
       <div className="container">
         <div className="box">
           <h2>Só falar que ele aparece na tela</h2>
-          {isListening ? <span>🎤</span> : <span>🔴🎤</span>}
+          //{isListening ? <span>🎤</span> : <span>🔴🎤</span>}
           <button onClick={handleSaveNotes} disabled={!note}>Salvar</button>
           <button onClick={() => setIsListening(prevState => !prevState)}>
             Iniciar / Pausar
