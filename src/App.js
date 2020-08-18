@@ -14,9 +14,9 @@ function App() {
   const [note, setNote] = useState(null);
   const [savedNotes, setSavedNotes] = useState([]);
 
-  useEffect(() => {
-    handleListen();
-  }, [isListening]);
+//   useEffect(() => {
+//     handleListen();
+//   }, [isListening]);
 
   const handleListen = () => {
     if(isListening) {
