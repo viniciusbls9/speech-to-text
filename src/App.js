@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-      <h1>Fala dos professores</h1>
+      <h1>Aperte para gravar e veja o texto aparecendo</h1>
       <div className="container">
         <div className="box">
           <h2>Só apertar o botão e falar</h2>
