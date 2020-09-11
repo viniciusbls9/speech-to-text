@@ -39,13 +39,12 @@ function App() {
       const transcript = Array.from(event.results)
       .map(result => result[0])
       .map(result => result.transcript)
-      .join('')
+      .join('');
       console.log(transcript);
       setNote(transcript);
       mic.onerror = event => {
         console.log(event.error)
       }
-
     }
   }
 
@@ -60,7 +59,7 @@ function App() {
       <h1>Fala dos professores</h1>
       <div className="container">
         <div className="box">
-          <h2>Só falar que ele aparece na tela</h2>
+          <h2>Só apertar o botão e falar</h2>
           {isListening ? <span>🎤</span> : <span>🔴🎤</span>}
           <button onClick={handleSaveNotes} disabled={!note}>Salvar</button>
           <button onClick={() => setIsListening(prevState => !prevState)}>
